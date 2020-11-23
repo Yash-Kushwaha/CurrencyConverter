@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  min-height: 100vh;
+}
+
+h1{
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.input{
+  border: 1px solid #333333;
+  block-size: inherit;
+  border-radius: .5rem;
+  padding: .25rem;
+  width: 7em;
+}
+
+.select{
+  margin-left: .5rem;
+}
+
+.equals{
+  font-weight: bold;
+  font-size: 2rem;
+}
