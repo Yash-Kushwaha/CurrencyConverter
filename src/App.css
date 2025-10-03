@@ -1,29 +1,53 @@
-body{
-  margin: 0;
-  display: flex;
-  justify-content: baseline;
-  align-items: baseline;
+.modern-bg {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
   min-height: 100vh;
+  transition: background 0.7s;
 }
 
-h1{
-  margin: 0;
-  margin-bottom: 0.5rem;
+.modern-card {
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: none;
+  transition: 
+    transform 0.3s cubic-bezier(.4,2,.6,1), 
+    box-shadow 0.3s, 
+    background 0.4s;
+  box-shadow: 0 8px 32px 0 rgba(60, 60, 120, 0.15);
 }
 
-.input{
-  border: 1px solid #333333;
-  block-size: inherit;
-  border-radius: .5rem;
-  padding: .25rem;
-  width: 7em;
+.modern-card-hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px 0 rgba(252, 182, 159, 0.25);
+  background: rgba(255,255,255,0.95);
 }
 
-.select{
-  margin-left: .5rem;
+.modern-title {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+  color: #ff7e5f;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #fff6;
 }
 
-.equals{
+.modern-equals {
+  color: #ff7e5f;
   font-weight: bold;
-  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.form-label {
+  color: #ff7e5f;
+  font-weight: 600;
+}
+
+.form-control, .form-select {
+  border-radius: 0.75rem !important;
+  border: 1px solid #ffb19933;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 0 0.2rem #ffecd299;
 }
